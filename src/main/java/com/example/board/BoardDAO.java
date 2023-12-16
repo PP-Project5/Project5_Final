@@ -35,8 +35,9 @@ public class BoardDAO {
             vo.setSeq(rs.getInt("seq"));
             vo.setTitle(rs.getString("title"));
             vo.setContent(rs.getString("content"));
-            vo.setWriter(rs.getString("writer"));
+            vo.setActor(rs.getString("actor"));
             vo.setRegdate(rs.getDate("regdate"));
+            vo.setSatisfaction(rs.getInt("satisfaction"));
             return vo;
         }
     }

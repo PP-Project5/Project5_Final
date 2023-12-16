@@ -53,12 +53,27 @@
 <form action="addok" method="post">
     <table>
         <tr><td>드라마명:</td><td><input type="text" name="title"/></td></tr>
-        <tr><td>대표 배우:</td><td><input type="text" name="writer"/></td></tr>
+        <tr><td>대표 배우:</td><td><input type="text" name="actor"/></td></tr>
         <tr><td>줄거리:</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
-        <tr><td><a href="list">View All Records</a></td><td align="right">
-            <input type="submit" value="Add Post"/></td></tr>
+        <tr><td><a href="list">View All Records</a></td></tr>
+        <tr><td>드라마 평점</td></tr>
+        <tr>
+            <td>
+                <input type="radio" id="satisfaction1" name="satisfaction" value="1">
+                <label for="satisfaction1">1</label>
+                <input type="radio" id="satisfaction2" name="satisfaction" value="2">
+                <label for="satisfaction2">2</label>
+                <input type="radio" id="satisfaction3" name="satisfaction" value="3">
+                <label for="satisfaction3">3</label>
+                <input type="radio" id="satisfaction4" name="satisfaction" value="4">
+                <label for="satisfaction4">4</label>
+                <input type="radio" id="satisfaction5" name="satisfaction" value="5">
+                <label for="satisfaction5">5</label>
+            </td>
+        </tr>
+        <tr><td align="right"><input type="submit" value="Add Post"/></td></tr>
+        <tr><td align="right"><input type="reset" value="Reset"></td></tr>
     </table>
 </form>
-
 </body>
 </html>

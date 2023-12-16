@@ -19,12 +19,12 @@ public class BoardVO {
         this.title = title;
     }
 
-    public String getWriter() {
-        return writer;
+    public String getActor() {
+        return actor;
     }
 
-    public void setWriter(String writer) {
-        this.writer = writer;
+    public void setActor(String actor) {
+        this.actor = actor;
     }
 
     public String getContent() {
@@ -51,13 +51,20 @@ public class BoardVO {
         this.cnt = cnt;
     }
 
+    public int getSatisfaction() {
+        return satisfaction;
+    }
 
+    public void setSatisfaction(int satisfaction) {
+        this.satisfaction = satisfaction;
+    }
 
     private int seq;
     private String title;
-    private String writer;
+    private String actor;
     private String content;
     private Date regdate;
     private int cnt;
 
+    private int satisfaction;
 }

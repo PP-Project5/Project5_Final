@@ -3,13 +3,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
     <insert id="insertBoard">
-        insert into BOARD (category, title, writer, content)
+        insert into BOARD (title, actor, content, satisfaction)
         values
-        (#{category} , #{title} , #{writer} , #{content})
+        (#{title} , #{actor} , #{content}, #{satisfaction})
     </insert>
     <update id="updateBoard">
-        update BOARDset
-        title=#{title}, content=#{content}, writer=#{writer}, category=#{category}
+        update BOARD
+        set title=#{title}, content=#{content}, actor=#{actor}, satisfaction=#{satisfaction}
         where seq=#{seq}
     </update>
     <delete id="deleteBoard">

@@ -79,6 +79,7 @@
         <th>Actor</th>
         <th>Content</th>
         <th>Regdate</th>
+        <th>Satisfaction</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -86,9 +87,10 @@
         <tr>
             <td>${u.getSeq()}</td>
             <td>${u.getTitle()}</td>
-            <td>${u.getWriter()}</td>
+            <td>${u.getActor()}</td>
             <td>${u.getContent()}</td>
             <td>${u.getRegdate()}</td>
+            <td>${u.getSatisfaction()}</td>
             <td><a href="editform/${u.getSeq()}" class="button" id="edit">Edit</a></td>
             <td><a href="deleteok/${u.getSeq()}" class="button" id="delete">Delete</a></td>
         </tr>
